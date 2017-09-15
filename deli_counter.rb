@@ -9,7 +9,7 @@ def line(array)
 
   if array.empty? == false
     output = ""
-    array.each_with_index{|val, ind| output += " #{val}. #{ind}"}
+    array.each_with_index{|val, ind| output += " #{ind+1}. #{val}"}
     puts "The line is currently:#{output}"
   else
     puts "The line is currently empty."
