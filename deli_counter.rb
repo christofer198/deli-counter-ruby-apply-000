@@ -7,9 +7,13 @@ end
 
 def line(array)
 
-  output = ""
-  array.each_with_index{|val, ind| output += " #{val}. #{index}"}
-  puts "The line is currently:#{output}"
+  if array.empty? == false
+    output = ""
+    array.each_with_index{|val, ind| output += " #{val}. #{ind}"}
+    puts "The line is currently:#{output}"
+  else
+    puts "The line is currently empty."
+  end
 end
 
 def now_serving(array)
